@@ -1,0 +1,13 @@
+PODS:
+  - IQKeyboardManagerSwift (4.0.0)
+  - SteviaLayout (2.1.0)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - SteviaLayout
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: ede2a27b4e1ce053d03073b9c7fa439322f5e405
+  SteviaLayout: 06d3ddc33ec279aa6ea7352ec254275e0d28c906
+
+COCOAPODS: 0.39.0
