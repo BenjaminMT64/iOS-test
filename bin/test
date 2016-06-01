@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-set -o pipefail
-
-xcodebuild test -workspace SamsaoTest.xcworkspace -scheme SamsaoTest -sdk iphonesimulator BUILD_ACTIVE_ARCH=NO | xcpretty -t -c

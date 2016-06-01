@@ -7,8 +7,8 @@ Feel free to use/add frameworks, tools or anything you are comfortable with or u
 ## What to do
 Your task is pretty simple, you have been given a login screen and server information (file in the project), you need to login the user into the server and display the information in a second screen you'll create.
 
-Keep in mind that you are free to create the network layer as you wish, but at the same time expected to follow the design for the information screen (image file in the project). 
-Feel free to follow your asumption in the any part you think wasn't clear enough.
+Keep in mind that you are free to create the network layer as you wish. 
+Feel free to follow your asumption in any part you think wasn't clear enough.
 
 Time to be creative!
 
