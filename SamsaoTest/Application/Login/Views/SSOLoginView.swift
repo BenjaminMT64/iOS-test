@@ -82,7 +82,7 @@ class SSOLoginView: UIView {
             let request = NSMutableURLRequest(URL: url!)
             request.HTTPMethod = "POST" //set http method as POST
             
-            //let err: NSError?
+            
             request.HTTPBody = try NSJSONSerialization.dataWithJSONObject(parameters, options: []) // pass dictionary to nsdata object and set it as request body
             
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -92,18 +92,32 @@ class SSOLoginView: UIView {
                 let dataVal = try NSURLConnection.sendSynchronousRequest(request, returningResponse: &response) as NSData?
                 // look at the response
                 if let httpResponse = response as? NSHTTPURLResponse {
-                    if(httpResponse.statusCode == 200){
+                    if(httpResponse.statusCode == 200){     //retrieving data
                         if let jsonResult = try NSJSONSerialization.JSONObjectWithData(dataVal!, options:[]) as? NSDictionary {
                             print("\(jsonResult)")
-                            print("Name: \(jsonResult.valueForKey("name")!)")
-                            let username = jsonResult.valueForKey("name")!
+                            print("Name: \(jsonResult.valueForKey("name")!)") //getting the strings from the
+                            let username = jsonResult.valueForKey("name")!    // result
                             let sig = jsonResult.valueForKey("signature")!
-                            _ = jsonResult.valueForKey("photo")!
+                            let photo = jsonResult.valueForKey("photo")!
+                            
                             let nom = UILabel()
-                            nom.text = username as! String
+                            nom.text = username as? String
                             let sign = UILabel()
-                            sign.text = sig as! String
-                            viewMe(nom, signature: sign)
+                            sign.text = sig as? String
+                            let phot = UILabel()
+                            phot.text = photo as? String
+                            
+                            
+                            
+                            let sec: secondViewController = secondViewController()
+                            sec.name = nom.text!
+                            sec.sit = sign.text!
+                            sec.pw = password.text!
+                            sec.photo = phot.text!
+                            
+                            vc!.presentViewController(sec, animated: true, completion: nil)
+                            
+                            
                         }
                         
                     }
@@ -123,24 +137,6 @@ class SSOLoginView: UIView {
         }catch{
             
         }
-        
-        
-    }
-    
-    func viewMe(name: UILabel, signature: UILabel) {
-        backgroundColor = UIColor.redColor()
-        //sv(
-           // username.removeFromSuperview(),
-            //password.removeFromSuperview()
-       // )
-        layout(
-            100,
-            |name ~ 80,
-            8,
-            |signature ~ 80,
-            "",
-            0
-        )
         
         
     }

@@ -21,7 +21,8 @@ class SSOLoginViewController: UIViewController {
     override func loadView() {
         view = SSOLoginView(viewController: self)
     }
-}
+    
+   }
 
 extension SSOLoginViewController: UITextFieldDelegate {
     func textFieldShouldReturn(textField: UITextField) -> Bool {

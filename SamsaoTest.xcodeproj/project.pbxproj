@@ -14,6 +14,7 @@
 		91B108A31CAC529200CCB1C3 /* SSOLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B108A21CAC529200CCB1C3 /* SSOLoginViewController.swift */; };
 		AB1779A30856A2073F879323 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3B97A64AF591F10D3D5F03 /* Foundation.framework */; };
 		E02C6D09E4754C050189D6D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3B746D45E61C4B90FB461CA /* Main.storyboard */; };
+		EC357B341D09C20C00C077B7 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC357B331D09C20C00C077B7 /* secondViewController.swift */; };
 		EED19C54F77984A4ED10FBE9 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F5428F1A10283C97E401F946 /* Settings.bundle */; };
 		FF0370D8EABF727B202A4634 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B03F27EA19207DBB02CA1252 /* Images.xcassets */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		AD8741C4E4D2CAB4A7583898 /* AppDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B03F27EA19207DBB02CA1252 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B8AB80E4F7B210CF5AB877B8 /* Pods-SamsaoTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamsaoTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-SamsaoTest/Pods-SamsaoTest.release.xcconfig"; sourceTree = "<group>"; };
+		EC357B331D09C20C00C077B7 /* secondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		EC4205A51D0894EE0018F81B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		EC4205A71D08970F0018F81B /* SteviaLayout */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SteviaLayout; path = Pods/SteviaLayout; sourceTree = "<group>"; };
 		EC4205A91D0897330018F81B /* Stevia */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Stevia; path = Pods/SteviaLayout/Stevia; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				91B108A21CAC529200CCB1C3 /* SSOLoginViewController.swift */,
+				EC357B331D09C20C00C077B7 /* secondViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -500,6 +503,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC357B341D09C20C00C077B7 /* secondViewController.swift in Sources */,
 				91B108A11CAC503900CCB1C3 /* SSOLoginView.swift in Sources */,
 				91B108A31CAC529200CCB1C3 /* SSOLoginViewController.swift in Sources */,
 				3B6DC9C6949F1496A9D5C198 /* AppDelegate.swift in Sources */,
