@@ -67,8 +67,60 @@ class SSOLoginView: UIView {
     func buttonStyle(button: UIButton) {
         button.backgroundColor = .lightGrayColor()
     }
-
+    
+    
+    func buttonClicked(sender:UIButton){
+        do{
+        login.backgroundColor = UIColor.blueColor()
+        //declare parameter as a dictionary which contains string as key and value combination.
+        let parameters = ["username": username.text!, "password": password.text!] as Dictionary<String, String>
+        
+        //create the url with NSURL
+        let url = NSURL(string: "http://api.samsaodev.com/login/") //change the url
+        
+        //now create the NSMutableRequest object using the url object
+        let request = NSMutableURLRequest(URL: url!)
+        request.HTTPMethod = "POST" //set http method as POST
+        
+        //let err: NSError?
+        request.HTTPBody = try NSJSONSerialization.dataWithJSONObject(parameters, options: []) // pass dictionary to nsdata object and set it as request body
+        
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        var response: NSURLResponse?
+            do {
+                let dataVal = try NSURLConnection.sendSynchronousRequest(request, returningResponse: &response) as NSData?
+                if let jsonResult = try NSJSONSerialization.JSONObjectWithData(dataVal!, options:[]) as? NSDictionary {
+                    print("\(jsonResult)")
+                }
+                }
+                // look at the response
+                if let httpResponse = response as? NSHTTPURLResponse {
+                    print("HTTP response: \(httpResponse.statusCode)")
+                    print("data \(httpResponse.allHeaderFields)")
+                    print("full Response: \(response)")
+                } else {
+                    print("No HTTP response")
+                }
+            } catch (let e) {
+                print(e)
+            }
+        
+    }
+    
+    
+    
     func loginTapped() {
         // TODO: Implement it.
+        
+        login.addTarget(self, action: #selector(SSOLoginView.buttonClicked(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        
+        
     }
+
+
+
+
 }
+
+

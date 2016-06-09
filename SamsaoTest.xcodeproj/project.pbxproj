@@ -26,6 +26,27 @@
 			remoteGlobalIDString = 27716DFF58208BD0FEE63C15;
 			remoteInfo = SamsaoTest;
 		};
+		EC4205B71D0899A40018F81B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC4205B11D0899A40018F81B /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 56963A2677380F0395148ABC7F00A372;
+			remoteInfo = IQKeyboardManagerSwift;
+		};
+		EC4205B91D0899A40018F81B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC4205B11D0899A40018F81B /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 13F1B26427ADCA1DDB63211E5D9AFCD6;
+			remoteInfo = "Pods-SamsaoTest";
+		};
+		EC4205BB1D0899A40018F81B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC4205B11D0899A40018F81B /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6FA27648F288973BF974E728825A05BA;
+			remoteInfo = SteviaLayout;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +63,13 @@
 		AD8741C4E4D2CAB4A7583898 /* AppDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B03F27EA19207DBB02CA1252 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B8AB80E4F7B210CF5AB877B8 /* Pods-SamsaoTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamsaoTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-SamsaoTest/Pods-SamsaoTest.release.xcconfig"; sourceTree = "<group>"; };
+		EC4205A51D0894EE0018F81B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EC4205A71D08970F0018F81B /* SteviaLayout */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SteviaLayout; path = Pods/SteviaLayout; sourceTree = "<group>"; };
+		EC4205A91D0897330018F81B /* Stevia */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Stevia; path = Pods/SteviaLayout/Stevia; sourceTree = "<group>"; };
+		EC4205AB1D0898E80018F81B /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		EC4205AD1D0899280018F81B /* SteviaLayout */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SteviaLayout; path = "Pods/Target Support Files/SteviaLayout"; sourceTree = "<group>"; };
+		EC4205AF1D0899490018F81B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Pods/Target Support Files/SteviaLayout/Info.plist"; sourceTree = "<group>"; };
+		EC4205B11D0899A40018F81B /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		EFBB2DCC1CBF50064D4369A2 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B746D45E61C4B90FB461CA /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F5428F1A10283C97E401F946 /* Settings.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -52,8 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB1779A30856A2073F879323 /* Foundation.framework in Frameworks */,
 				5DF53FF5AC9ADAEC0DFB0A1D /* Pods_SamsaoTest.framework in Frameworks */,
+				AB1779A30856A2073F879323 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +122,13 @@
 		4B0894464CC536B4EF8FF35C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EC4205B11D0899A40018F81B /* Pods.xcodeproj */,
+				EC4205AF1D0899490018F81B /* Info.plist */,
+				EC4205AD1D0899280018F81B /* SteviaLayout */,
+				EC4205AB1D0898E80018F81B /* Podfile */,
+				EC4205A91D0897330018F81B /* Stevia */,
+				EC4205A71D08970F0018F81B /* SteviaLayout */,
+				EC4205A51D0894EE0018F81B /* SystemConfiguration.framework */,
 				3D2FB02A6DD31C5BEB5346FA /* iOS */,
 				EFBB2DCC1CBF50064D4369A2 /* Pods.framework */,
 				5435A760073181FBD45ACB1F /* Pods_SamsaoTest.framework */,
@@ -222,6 +257,16 @@
 			path = SamsaoTest;
 			sourceTree = "<group>";
 		};
+		EC4205B21D0899A40018F81B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC4205B81D0899A40018F81B /* IQKeyboardManagerSwift.framework */,
+				EC4205BA1D0899A40018F81B /* Pods_SamsaoTest.framework */,
+				EC4205BC1D0899A40018F81B /* SteviaLayout.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		F5F294BA77433A77169ED43D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,14 +296,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6FE91F4914BEA99227B6279 /* Build configuration list for PBXNativeTarget "SamsaoTest" */;
 			buildPhases = (
-				1824047981B90616231F213E /* 📦 Check Pods Manifest.lock */,
+				1824047981B90616231F213E /* [CP] Check Pods Manifest.lock */,
 				DB6BDAC1E34DFC9726391547 /* Sources */,
 				2DBC1DF2BB575AF11B906F87 /* Frameworks */,
 				22FC4F0259BF2FB5E947B2DD /* Resources */,
 				107F9ED5FDEC4404A8DD73AA /* Warn for TODO and FIXME comments */,
 				499D3F5ADF9040DBD3CAA17A /* Set version number */,
-				A504DE533C84CA47D29FB319 /* 📦 Embed Pods Frameworks */,
-				2224289D8316ECE21363651C /* 📦 Copy Pods Resources */,
+				A504DE533C84CA47D29FB319 /* [CP] Embed Pods Frameworks */,
+				2224289D8316ECE21363651C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -295,7 +340,7 @@
 			attributes = {
 				CLASSPREFIX = SSO;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Samsao;
 			};
 			buildConfigurationList = E6E6D3F4CCF71F6630B9143B /* Build configuration list for PBXProject "SamsaoTest" */;
@@ -308,6 +353,12 @@
 			mainGroup = FEB61CB79F4939FCCB791E56;
 			productRefGroup = 6E0BE93FEEA8FAA7B27FF265 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EC4205B21D0899A40018F81B /* Products */;
+					ProjectRef = EC4205B11D0899A40018F81B /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				27716DFF58208BD0FEE63C15 /* SamsaoTest */,
@@ -315,6 +366,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EC4205B81D0899A40018F81B /* IQKeyboardManagerSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IQKeyboardManagerSwift.framework;
+			remoteRef = EC4205B71D0899A40018F81B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EC4205BA1D0899A40018F81B /* Pods_SamsaoTest.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_SamsaoTest.framework;
+			remoteRef = EC4205B91D0899A40018F81B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EC4205BC1D0899A40018F81B /* SteviaLayout.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SteviaLayout.framework;
+			remoteRef = EC4205BB1D0899A40018F81B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		22FC4F0259BF2FB5E947B2DD /* Resources */ = {
@@ -352,14 +427,14 @@
 			shellPath = /bin/sh;
 			shellScript = "KEYWORDS=\"TODO:|FIXME:|\\?\\?\\?:|\\!\\!\\!:\"\nFILE_EXTENSIONS=\"swift|h|m|mm|c|cpp\"\nfind -E \"${SRCROOT}\" -ipath \"${SRCROOT}/Carthage\" -o -ipath \"${SRCROOT}/pods\" -prune -o \\( -regex \".*\\.($FILE_EXTENSIONS)$\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | perl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"\n";
 		};
-		1824047981B90616231F213E /* 📦 Check Pods Manifest.lock */ = {
+		1824047981B90616231F213E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,14 +442,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		2224289D8316ECE21363651C /* 📦 Copy Pods Resources */ = {
+		2224289D8316ECE21363651C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,14 +471,14 @@
 			shellPath = /bin/sh;
 			shellScript = "git=$(sh /etc/profile; which git)\ngit_release_version=$(\"$git\" describe --tags --always --abbrev=0)\nnumber_of_commits=$(\"$git\" rev-list master --count)\ntarget_plist=\"$TARGET_BUILD_DIR/$INFOPLIST_PATH\"\ndsym_plist=\"$DWARF_DSYM_FOLDER_PATH/$DWARF_DSYM_FILE_NAME/Contents/Info.plist\"\n\nfor plist in \"$target_plist\" \"$dsym_plist\"; do\n  if [ -f \"$plist\" ]; then\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $number_of_commits\" \"$plist\"\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString ${git_release_version#*v}\" \"$plist\"\n  fi\ndone\n";
 		};
-		A504DE533C84CA47D29FB319 /* 📦 Embed Pods Frameworks */ = {
+		A504DE533C84CA47D29FB319 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +529,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				INFOPLIST_FILE = "UnitTests/Resources/UnitTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samsaodev.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -473,6 +549,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				INFOPLIST_FILE = "UnitTests/Resources/UnitTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samsaodev.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -505,6 +582,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -593,10 +671,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/IQKeyboardManagerSwift\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SteviaLayout\"",
+				);
 				INFOPLIST_FILE = "SamsaoTest/Resources/Other-Sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samsaodev.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 			};
@@ -608,11 +693,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/IQKeyboardManagerSwift\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SteviaLayout\"",
+				);
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "SamsaoTest/Resources/Other-Sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samsaodev.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 			};
